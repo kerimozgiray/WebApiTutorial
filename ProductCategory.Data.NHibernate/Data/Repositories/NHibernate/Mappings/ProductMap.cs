@@ -13,8 +13,8 @@ namespace ProductCategory.Data.NHibernate.Data.Repositories.NHibernate.Mappings
             Map(x => x.Name).Column("Name");
             References(x => x.ProductCategory).Column("CategoryId");
             Map(x => x.RecordDate).Default(DateTime.Now.ToShortDateString());
-            Map(x => x.Image).LazyLoad();
-            
+            Map(x => x.Image);
+
         }
     }
 }

@@ -1,11 +1,13 @@
-﻿using System.Web.Http;
+﻿using System.Net.Http;
+using System.Web.Http;
 using ProductCategory.Core.ProductCategory.Services;
+using ProductCategoryTutorial.RestApi.Helpers;
 using ProductCategoryTutorial.RestApi.Models.DTO;
 
 namespace ProductCategoryTutorial.RestApi.Controllers
 {
     [RoutePrefix("api")]
-    public class ProductController : ApiController
+    public class ProductController : BaseApiController
     {
         private readonly IProductService _productService;
 
@@ -21,7 +23,7 @@ namespace ProductCategoryTutorial.RestApi.Controllers
 
         [Route("products/{id:int}")]
         [HttpGet]
-        public ProductDto GetProducts(int id)
+        public HttpResponseMessage ProductsById(int id)
         {
             var product = _productService.GetProductsById(id);
 
@@ -30,11 +32,11 @@ namespace ProductCategoryTutorial.RestApi.Controllers
                 Id = product.Id,
                 Name = product.Name,
                 CategoryId = product.ProductCategory.Id,
-                Image = string.Empty,
+                Image = product.Image,
                 RecordDate = product.RecordDate
             };
 
-            return productDto;
+            return CreateResponse(ResponseCode.Success, productDto);
         }
     }
 }
