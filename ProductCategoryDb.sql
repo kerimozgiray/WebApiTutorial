@@ -111,14 +111,14 @@ GO
 SET IDENTITY_INSERT [dbo].[Categories] ON 
 
 GO
-INSERT [dbo].[Categories] ([Id], [Name]) VALUES (1, N'Kıçım')
+INSERT [dbo].[Categories] ([Id], [Name]) VALUES (1, N'Vegetable')
 GO
 SET IDENTITY_INSERT [dbo].[Categories] OFF
 GO
 SET IDENTITY_INSERT [dbo].[Products] ON 
 
 GO
-INSERT [dbo].[Products] ([Id], [Name], [CategoryId], [Image], [RecordDate]) VALUES (1, N'Popom', 1, NULL, CAST(0x703A0B00 AS Date))
+INSERT [dbo].[Products] ([Id], [Name], [CategoryId], [Image], [RecordDate]) VALUES (1, N'Eggplant', 1, NULL, CAST(0x703A0B00 AS Date))
 GO
 SET IDENTITY_INSERT [dbo].[Products] OFF
 GO
