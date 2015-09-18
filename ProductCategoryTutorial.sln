@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategory.Core", "ProductCategory.Core\ProductCategory.Core.csproj", "{618B3A7E-4199-4E1B-90B6-16B518A91712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategory.Data.NHibernate", "ProductCategory.Data.NHibernate\ProductCategory.Data.NHibernate.csproj", "{BACB6E83-90C6-4D1E-B599-989890924BFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrductCategory.Depedency", "PrductCategory.Depedency\PrductCategory.Depedency.csproj", "{C134BD8E-53FC-44FC-804A-4EE3BBB9FACB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{935D2B1C-4F38-4FA0-845C-C76F3D525D6B}"
+	ProjectSection(SolutionItems) = preProject
+		ProductCategoryDb.sql = ProductCategoryDb.sql
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategoryTutorial.RestApi", "ProductCategoryTutorial.RestApi\ProductCategoryTutorial.RestApi.csproj", "{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{618B3A7E-4199-4E1B-90B6-16B518A91712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{618B3A7E-4199-4E1B-90B6-16B518A91712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{618B3A7E-4199-4E1B-90B6-16B518A91712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{618B3A7E-4199-4E1B-90B6-16B518A91712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BACB6E83-90C6-4D1E-B599-989890924BFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BACB6E83-90C6-4D1E-B599-989890924BFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BACB6E83-90C6-4D1E-B599-989890924BFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BACB6E83-90C6-4D1E-B599-989890924BFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C134BD8E-53FC-44FC-804A-4EE3BBB9FACB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C134BD8E-53FC-44FC-804A-4EE3BBB9FACB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C134BD8E-53FC-44FC-804A-4EE3BBB9FACB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C134BD8E-53FC-44FC-804A-4EE3BBB9FACB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
