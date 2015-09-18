@@ -1,7 +1,8 @@
 ﻿using System.Net.Http;
 using System.Web.Http;
+using ProductCategory.Core.ProductCategory.Data.Business;
 using ProductCategory.Core.ProductCategory.Services;
-using ProductCategoryTutorial.RestApi.Helpers;
+using ProductCategoryTutorial.RestApi.Infrastructure;
 using ProductCategoryTutorial.RestApi.Models.DTO;
 
 namespace ProductCategoryTutorial.RestApi.Controllers
@@ -15,11 +16,6 @@ namespace ProductCategoryTutorial.RestApi.Controllers
         {
             _productService = productService;
         }
-
-        //public List<Product> GetProductByCategoryId(int categoryId)
-        //{
-        //    return _productService.GetProductsByCategoryId(categoryId);
-        //}
 
         [Route("products/{id:int}")]
         [HttpGet]

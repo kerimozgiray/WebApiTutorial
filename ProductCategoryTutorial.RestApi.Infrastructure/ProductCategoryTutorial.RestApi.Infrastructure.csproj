@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{618B3A7E-4199-4E1B-90B6-16B518A91712}</ProjectGuid>
+    <ProjectGuid>{F2B5080F-C670-46B1-8E0D-65DBFD013466}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ProductCategory.Core</RootNamespace>
-    <AssemblyName>ProductCategory.Core</AssemblyName>
+    <RootNamespace>ProductCategoryTutorial.RestApi.Infrastructure</RootNamespace>
+    <AssemblyName>ProductCategoryTutorial.RestApi.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,16 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Iesi.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\Iesi.Collections.4.0.0.4000\lib\net40\Iesi.Collections.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="NHibernate, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
-      <HintPath>..\packages\NHibernate.4.0.0.4000\lib\net40\NHibernate.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -48,24 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ProductCategory\Data\Business\ResponseCode.cs" />
-    <Compile Include="ProductCategory\Data\Entities\Category.cs" />
-    <Compile Include="ProductCategory\Data\Entities\EntityBase.cs" />
-    <Compile Include="ProductCategory\Data\Entities\IEntity.cs" />
-    <Compile Include="ProductCategory\Data\Entities\Product.cs" />
-    <Compile Include="ProductCategory\Data\Repositories\ICategoryRepository.cs" />
-    <Compile Include="ProductCategory\Data\Repositories\IProductRepository.cs" />
-    <Compile Include="ProductCategory\Data\Repositories\IRepository.cs" />
-    <Compile Include="ProductCategory\Data\IUnitOfWork.cs" />
-    <Compile Include="ProductCategory\Data\UnitOfWorkAttribute.cs" />
-    <Compile Include="ProductCategory\Services\ICategoryService.cs" />
-    <Compile Include="ProductCategory\Services\Implementation\CategoryService.cs" />
-    <Compile Include="ProductCategory\Services\Implementation\ProductService.cs" />
-    <Compile Include="ProductCategory\Services\IProductService.cs" />
+    <Compile Include="BaseApiController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCategory.Core\ProductCategory.Core.csproj">
+      <Project>{618B3A7E-4199-4E1B-90B6-16B518A91712}</Project>
+      <Name>ProductCategory.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

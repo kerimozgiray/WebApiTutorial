@@ -133,7 +133,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Helpers\WebApiHelper.cs" />
     <Compile Include="Models\DTO\ProductDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -165,6 +164,10 @@
     <ProjectReference Include="..\ProductCategory.Core\ProductCategory.Core.csproj">
       <Project>{618B3A7E-4199-4E1B-90B6-16B518A91712}</Project>
       <Name>ProductCategory.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ProductCategoryTutorial.RestApi.Infrastructure\ProductCategoryTutorial.RestApi.Infrastructure.csproj">
+      <Project>{F2B5080F-C670-46B1-8E0D-65DBFD013466}</Project>
+      <Name>ProductCategoryTutorial.RestApi.Infrastructure</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

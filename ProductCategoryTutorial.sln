@@ -16,6 +16,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{93
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategoryTutorial.RestApi", "ProductCategoryTutorial.RestApi\ProductCategoryTutorial.RestApi.csproj", "{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCategoryTutorial.RestApi.Infrastructure", "ProductCategoryTutorial.RestApi.Infrastructure\ProductCategoryTutorial.RestApi.Infrastructure.csproj", "{F2B5080F-C670-46B1-8E0D-65DBFD013466}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,6 +40,10 @@ Global
 		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F549FDE9-64F6-4D24-9E52-1B0FDCC54AF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2B5080F-C670-46B1-8E0D-65DBFD013466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B5080F-C670-46B1-8E0D-65DBFD013466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B5080F-C670-46B1-8E0D-65DBFD013466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B5080F-C670-46B1-8E0D-65DBFD013466}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,8 +1,14 @@
-﻿using System.Net;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net;
 using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web.Http;
+using ProductCategory.Core.ProductCategory.Data.Business;
 
-namespace ProductCategoryTutorial.RestApi.Helpers
+namespace ProductCategoryTutorial.RestApi.Infrastructure
 {
     public abstract class BaseApiController : ApiController
     {
@@ -14,12 +20,6 @@ namespace ProductCategoryTutorial.RestApi.Helpers
                     code = ((int)responseStatusCode).ToString(),
                     data
                 });
-        }
-
-        public enum ResponseCode
-        {
-            Success = 0,
-            Error = 1
         }
     }
 }
